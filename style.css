@@ -1,0 +1,130 @@
+main {
+    padding: 1em;
+    text-align: center;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li:hover {
+    background-color: black;
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+    transition-duration: 0.3s;
+
+    cursor: pointer;
+}
+.profiles {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+
+    background: #eaeaea;
+    padding: 10px 20px;
+    margin: 1%;
+}
+main {
+    position: relative;
+    margin-top: 12%;
+}
+.card img {
+    float: left;
+    border-radius: 50%;
+}
+.cta {
+    background: lightblue;
+    margin: 1%;
+    padding: 20px;
+    text-align: center;
+}
+.cta p, .cta h3, .cta p {
+    text-align: left;
+}
+.button {
+    padding: 12px 30px;
+    background: salmon;
+    color: white;
+    border-radius: 0.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#about {
+    text-align: center;
+}
+#aboutText {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 40%;
+    background-color: lightblue;
+    margin: 0 2em;
+   
+}
+#aboutVideo {
+    display: inline-block;
+    vertical-align: top;
+    background-color: lightblue;
+    height: 300px;
+    margin: 0 2em;
+}
+#contact {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: antiquewhite;
+    border: 1px yellow solid;
+    text-align: left;
+    padding: 1.5em;
+    margin: 1.5em;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+.serv {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 27%;
+    height: 400px;
+    display: inline-block;
+    padding: 1.5em;
+    margin: 1.5em;
+    background-color: darkgrey;
+    border: double 3px grey;
+    border-radius: 0.3em;
+    vertical-align: top;
+}
+
+#div1, #div2 {
+    width: 30%;
+    height: 200px;
+    margin: 2em;
+    border: 3px solid yellow;
+    display: inline-block;
+    vertical-align: top;
+}

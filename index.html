@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Advance Web Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <meta name="description" content="This is advanced web technology course" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        a:hover {
+            text-shadow: 1px 1px 20px yellow;
+        }
+        .header{
+            height: 250px;
+            display: flex;
+            flex-direction:column;
+        }
+        ul {
+            list-style-type: none;
+            color: white;
+            background-color: darkred;
+            padding: 1.2em;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        li {
+            display: inline;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="header.jpg" width="100%" />
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dragndrop.html">Drag-n-drop</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="profiles">
+            <div class="card">
+                <div class="main-info">
+                    <img src="3.jpg" alt="Bill Gates" width="100" />
+                    <h3>Bill Gates</h3>
+                </div>
+                <p>
+                    Bill Gates was the richest man in the World in 2017.
+                </p>
+            </div>
+            <div class="card">
+                <div class="main-info">
+                    <img src="1.jpg" alt="Albert Enstein" width="100" />
+                    <h3>Albert Enstein</h3>
+                </div>
+                <p>
+                    Albert Enstein the scientist who invent the energy formula.
+                </p>
+            </div>
+            <div class="card">
+                <div class="main-info">
+                    <img src="2.jpg" alt="Steve Jobs" width="100" />
+                    <h3>Steve Jobs</h3>
+                </div>
+                <p>
+                    Steve Jobs was a founder and co-founder of Apple, Inc and Pixar.
+                </p>
+            </div>
+        </section>
+        <section class="cta">
+            <h3>The FOUR book about the great fourth of CEOs</h3>
+            <p>Go to the amazon.com and buy the paper book or the e-book now.</p>
+            <a href="https://amazon.com" target="_blank" class="button">Buy Now</a>
+        </section>
+    </main>
+    <footer>
+        <div style="font-family: Arial, Helvetica, sans-serif; color: white; background-color: darkred; padding: 1.2em; font-size: 1.1em; position: fixed; bottom: 0; width: 100%;">&copy; 2019 | Designed by: <a style="color: gold; text-decoration: none;" href="http://glorifix.com">Rahim Razmgir</a> </div>
+    </footer>
+
+</body>
+</html>

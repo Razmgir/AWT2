@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services | Advance Web Technologies</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="This is advanced web technology course" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover {
+            text-shadow: 1px 1px 20px yellow;
+        }
+
+        .header {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul {
+            list-style-type: none;
+            color: white;
+            background-color: darkred;
+            padding: 1.2em;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        li {
+            display: inline;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+
+            li a {
+                text-decoration: none;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="header.jpg" width="100%" />
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dragndrop.html">Drag-n-drop</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Services and features</h1>
+        <section class="serv">
+            <h2>Average calculating tool</h2>
+            <p>You have student scores you need an average for? We've got you covered.</p>
+            <button class="btn btn-primary" onclick="Average()">Start</button> <br /><br />
+            <h3 id="res"></h3>
+        </section>
+        <section class="serv">
+            <h2>ADVANCED Average calculating tool</h2>
+            <p>Now we do the same thing with no annoying pop-ups!</p>
+            <form id="frm">
+                <input type="text" name="num1" placeholder="First Number" /><br /><br />
+                <input type="text" name="num2" placeholder="Second Number" /><br /><br />
+                <input type="text" name="num3" placeholder="Third Number" /><br /><br />
+            </form>
+            <button class="btn btn-primary" onclick="Adv()">Start</button>
+            <h4 id="res2"></h4>
+        </section>
+        <section class="serv">
+            <h2>Showing date</h2>
+            <p>Get the current date and time by pressing the button bellow.</p>
+            <button class="btn btn-primary" onclick="date()">Start</button> <br /><br />
+            <h3 id="res3"></h3>
+        </section>
+        <section class="serv">
+            <h2>Prime numbers </h2>
+            <p>This tool will make prime numbers.</p>
+            <button class="btn btn-primary" onclick="prime()">Start</button> <br /><br />
+            <h2 id="res4">0</h2>
+        </section>
+        <section class="serv">
+            <h2>Fibonacci numbers</h2>
+            <p>This tool will make Fibonacci numbers</p>
+            <button class="btn btn-primary" onclick="fib()">Start</button> <br /><br />
+            <h3 id="res5">0</h3>
+        </section>
+        <section class="serv">
+            <h2>Bonus: Fortune telling</h2>
+            <p>This tool will tell you your future based on your birthday.</p>
+            <input type="date" name="date" id="date" /> <br /> <br />
+            <button class="btn btn-primary" onclick="ftelling()">Start</button> <br /><br />
+            <h3 id="res6"></h3>
+        </section>
+        <section class="serv">
+            <h2>Bonus: game of dice</h2>
+            <p>Press the button to roll the dice.</p>
+            <button class="btn btn-primary" onclick="rollTheDice();">Start</button> <br /><br />
+            <h3 id="res7"></h3>
+            <h3 id="res72"></h3>
+        </section>
+        <section class="serv">
+            <h2>Local storage</h2>
+            <p>Press the button to count the clicks and see what happens if you refresh the page.</p>
+            <button class="btn btn-primary" onclick="Count()">Start</button> <br /><br />
+            <h3 id="result"></h3>
+        </section>
+        <section class="serv">
+            <h2>Web workers</h2>
+            <p>Web workers are real workers. they never tire!</p>
+            <button class="btn btn-primary" onclick="ww()">Start</button> <br /><br />
+            <h3 id="result2"></h3>
+        </section>
+        <section class="serv">
+            <h2>GeoLocation</h2>
+            <p>Yes, we can tell where the user is!</p>
+            <button class="btn btn-primary" onclick="Location()">Start</button> <br /><br />
+            <h3 id="result3"></h3>
+        </section>
+    </main>
+
+    <footer>
+        <div style="font-family: Arial, Helvetica, sans-serif; color: white; background-color: darkred; padding: 1.2em; font-size: 1.1em;">&copy; 2019 | Designed by: <a style="color: gold; text-decoration: none;" href="http://glorifix.com">Rahim Razmgir</a> </div>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>

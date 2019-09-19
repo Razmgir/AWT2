@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact | Advance Web Technologies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" async></script>
+
+    <meta name="description" content="This is advanced web technology course" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover {
+            text-shadow: 1px 1px 20px yellow;
+        }
+
+        .header {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul {
+            list-style-type: none;
+            color: white;
+            background-color: darkred;
+            padding: 1.2em;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        li {
+            display: inline;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+
+            li a {
+                text-decoration: none;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="header.jpg" width="100%" />
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="dragndrop.html">Drag-n-drop</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1 id="title">Contact us</h1>
+
+        <form action="thank.html" method="post" id="contact" class="form-group">
+            First name: <input type="text" name="fname" class="form-group" id="fname" /> <br />
+            Last name: <input type="text" name="lname" class="form-group" /> <br />
+            Gender: &nbsp;
+            <input type="radio" value="male" name="gender" /> male &nbsp;
+            <input type="radio" value="female" name="gender" checked />  female &nbsp;
+            <input type="radio" value="other" name="gender" />  other<br /><br />
+            Pick your course: &nbsp;
+            <input type="checkbox" value="HTML" name="course" /> HTML &nbsp;
+            <input type="checkbox" value="CSS" name="course" />  CSS &nbsp;
+            <input type="checkbox" value="JS" name="course" />  JS<br /><br />
+            City:
+            <select name="city" class="form-group">
+                <option value="Toronto">Toronto</option>
+                <option value="London">London</option>
+                <option value="Vancouver">Vancouver</option>
+                <option value="Montreal">Montreal</option>
+            </select>
+            <br />
+            Coments: <br />
+            <textarea name="message" cols="30" rows="5" class="form-group"></textarea><br />
+
+            How awesome would you like to be?
+            <input class="slider" type="range" name="awe" value="50">
+            <br />
+            <input type="submit" onclick="cname()" value="Send" class="btn btn-success" />
+
+        </form>
+        <div id="googleMap" style="width:52%;height:550px; margin:1.5em; display:inline-block; "></div>
+    </main>
+    <footer>
+        <div style="font-family: Arial, Helvetica, sans-serif; color: white; background-color: darkred; padding: 1.2em; font-size: 1.1em; ">&copy; 2019 | Designed by: <a style="color: gold; text-decoration: none;" href="http://glorifix.com">Rahim Razmgir</a> </div>
+    </footer>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(43.67, -79.37),
+                zoom: 15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMMabgTsOkpGx-gl0sFNUaFk501qoU2zc&callback=myMap"></script>
+    
+</body>
+</html>
